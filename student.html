@@ -52,7 +52,7 @@
                 </button>
                 <div class="flex gap-[30px]">
                     <img src="./img/sort 1.svg" alt="">
-                <button class="bg-amber-400 text-white px-4 py-2 rounded-md font-medium">
+                <button id="addStudent" class="bg-amber-400 text-white px-4 py-2 rounded-md font-medium">
                   ADD NEW STUDENT
                 </button>
                 </div>
@@ -73,6 +73,23 @@
     </div>
         
 </div>
+
+<div id="studentModal" class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center">
+  <div class="bg-white p-6 rounded-lg shadow-lg w-[400px]">
+      <h2 class="text-xl font-bold mb-4">Add New Student</h2>
+      <input id="studentName" type="text" placeholder="Enter Name" class="w-full border p-2 rounded mb-2">
+      <input id="studentEmail" type="email" placeholder="Enter Email" class="w-full border p-2 rounded mb-2">
+      <input id="studentPhone" type="text" placeholder="Enter Phone" class="w-full border p-2 rounded mb-2">
+      <input id="studentEnroll" type="text" placeholder="Enter Enroll Number" class="w-full border p-2 rounded mb-2">
+      <input id="studentDate" type="date" class="w-full border p-2 rounded mb-4">
+      <div class="flex justify-end gap-4">
+          <button id="closeModal" class="px-4 py-2 bg-gray-400 text-white rounded">Cancel</button>
+          <button id="saveStudent" class="px-4 py-2 bg-amber-500 text-white rounded">Save</button>
+      </div>
+  </div>
+</div>
+
+<script src="student.js"></script>
 
 </body>
 </html>
