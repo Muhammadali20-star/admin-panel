@@ -102,7 +102,7 @@ function addStudentToTable(student) {
     tbody.appendChild(tr);
 }
 
-// Talaba ustiga bosilganda ma'lumotlarini saqlash
+
 function saveStudentData(name) {
     let students = JSON.parse(localStorage.getItem("students")) || [];
     let student = students.find(s => s.name === name);
